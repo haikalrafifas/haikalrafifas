@@ -1,13 +1,7 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import UnderDevelopment from "@/components/pages/UnderDevelopment";
 
-export default function PostsPage() {
-  const { id } = useParams();
-
-  return (
-    <>
-      <h1>Posts: {id}</h1>
-    </>
-  );
-};
+export default function Post() {
+  return <UnderDevelopment />;
+}

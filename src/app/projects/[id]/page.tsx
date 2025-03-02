@@ -2,6 +2,6 @@
 
 import UnderDevelopment from "@/components/pages/UnderDevelopment";
 
-export default function Posts() {
+export default function Project() {
   return <UnderDevelopment />;
 }
