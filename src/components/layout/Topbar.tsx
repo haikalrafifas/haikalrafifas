@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Topbar() {
   return (
@@ -7,7 +8,7 @@ export default function Topbar() {
         {/* Left: Logo + Name */}
         <div className="text-2xl font-bold">
           <Link href="/" className="flex">
-            <img src="/assets/images/logo.jpg" width="42" />
+            <Image src="/assets/images/logo.jpg" alt="Logo" width="42" />
             <h1 className="ml-5 mt-1 font-mono">Haikal</h1>
           </Link>
         </div>

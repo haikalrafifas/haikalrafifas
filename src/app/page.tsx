@@ -74,7 +74,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-lg text-gray-300 mb-8"
           >
-            I'm a passionate Software Engineer. Let's build something amazing together!
+            I&apos;m a passionate Software Engineer. Let&apos;s build something amazing together!
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -107,8 +107,8 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-8">My Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map(service => (
-                  <div className="bg-gray-900 p-6 rounded-lg">
+              {services.map((service, index) => (
+                  <div key={index} className="bg-gray-900 p-6 rounded-lg">
                     <h3 className="text-xl mb-2">{service.name}</h3>
                     <p className="text-gray-300">{service.description}</p>
                   </div>
@@ -128,8 +128,8 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-8">My Latest Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-mono">
-              {latestProjects.map(project => (
-                <div className="bg-gray-900 p-6 rounded-lg">
+              {latestProjects.map((project, index) => (
+                <div key={index} className="bg-gray-900 p-6 rounded-lg">
                   <h3 className="text-xl mb-2">{project.name}</h3>
                   <p className="text-gray-300">{project.description}</p>
                 </div>
@@ -148,8 +148,8 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-8">Latest Blog Posts</h2>
             <div className="space-y-4">
-              {latestBlogPosts.map(blog => (
-                <div className="bg-gray-800 p-6 rounded-lg">
+              {latestBlogPosts.map((blog, index) => (
+                <div key={index} className="bg-gray-800 p-6 rounded-lg">
                   <h3 className="text-xl mb-2">{blog.title}</h3>
                   <p className="text-gray-300">{blog.snippets}</p>
                 </div>
