@@ -91,7 +91,7 @@ export default function Home() {
             className="flex space-x-8 justify-center mt-6"
           >
             <SocialIcon platform="github" href="https://github.com/haikalrafifas" />
-            <SocialIcon platform="linkedin" href="https://linkedin.com/haikalrafifas" />
+            <SocialIcon platform="linkedin" href="https://linkedin.com/in/haikalrafifas" />
             <SocialIcon platform="youtube" href="https://youtube.com/@gurumbelingofficial5276" />
             <SocialIcon platform="upwork" href="https://upwork.com/freelancers/~01bcd5356eff90cb60?mp_source=share" />
           </motion.div>
