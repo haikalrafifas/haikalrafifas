@@ -1,27 +1,42 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/700.css';
 
 export const metadata: Metadata = {
   title: 'Haikal Rafif Website',
-  description: 'Haikal Rafif\'s personal website.',
-  keywords: 'haikalrafifas',
+  description: 'Haikal Rafif\'s Personal Website',
+  keywords: ['gokal', 'Haikal Rafif', 'haikalrafifas'],
   openGraph: {
     title: 'Haikal Rafif Website',
-    description: 'Haikal Rafif\'s personal website.',
+    description: 'Haikal Rafif\'s Personal Website',
+    url: 'https://gokal.my.id',
+    siteName: 'Haikal Rafif Website',
+    images: [
+      {
+        url: 'https://gokal.my.id/images/logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Haikal Rafif Website',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: any) {
   return (
-    <html lang='en'>
-      <body className={inter.className + ' bg-black text-green-400'}>{children}</body>
+    <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </head>
+      <body style={{ fontFamily: 'Inter, sans-serif' }}>
+        {children}
+      </body>
     </html>
   );
 }
